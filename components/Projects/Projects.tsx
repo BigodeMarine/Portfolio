@@ -1,7 +1,6 @@
 import { ExternalLink, GitBranch, Layers3 } from "lucide-react";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
-import { a } from "framer-motion/client";
 
 const projects = [
   {
