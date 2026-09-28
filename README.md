@@ -67,5 +67,5 @@ A cada push ou pull request na main, o GitHub Actions executa:
 5. O deploy é feito automaticamente pela Vercel a cada push na main.  
 
 
-<p align="center">Feito com ☕, Typescript e um pouco de engrenagem.</p>  
+<p align="center">Feito com ☕, Typescript,CSS e um pouco de engrenagem.</p>  
 
