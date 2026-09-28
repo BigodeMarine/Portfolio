@@ -9,9 +9,9 @@ const projects = [
     category: "FULL STACK APPLICATION",
     title: "Crônicas",
     description:
-      "Plataforma para gerenciamento de Campanhas, tarefas e equipes, desenvolvida com uma arquitetura full stack.",
+      "Plataforma para gerenciamento de Campanhas, acontecimentos e membros, desenvolvida com uma arquitetura full stack.",
     technologies: ["PYTHON", "FASTAPI", "NEXT.JS", "POSTGRESQL", "DOCKER"],
-    github: "#",
+    github: "https://github.com/BigodeMarine/Cronicas.git",
     demo: "#",
   },
   {
