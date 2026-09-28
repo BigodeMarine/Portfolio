@@ -1,0 +1,234 @@
+.education {
+  position: relative;
+  padding: clamp(6rem, 10vw, 10rem) clamp(1.5rem, 6vw, 7rem);
+  border-top: 1px solid rgba(138, 99, 56, 0.12);
+  background: var(--color-background);
+  overflow: hidden;
+}
+
+.education::before {
+  content: "";
+  position: absolute;
+  left: -20%;
+  bottom: -25%;
+  width: 55%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(138, 99, 56, 0.04),
+    transparent 65%
+  );
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.sectionNumber {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--color-bronze);
+  font-family: var(--font-mono);
+  font-size: 0.90rem;
+  letter-spacing: 0.18em;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+}
+
+.sectionHeader h2 span {
+  display: block;
+  margin-top: 0.15em;
+  color: var(--color-red-bright);
+  font-size: 0.45em;
+  letter-spacing: 0.15em;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 3rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 0.65rem;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-bronze),
+    rgba(138, 99, 56, 0.12)
+  );
+}
+
+.educationItem {
+  position: relative;
+}
+
+.marker {
+  position: absolute;
+  top: 0;
+  left: -3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(138, 99, 56, 0.4);
+  background: var(--color-background);
+  color: var(--color-bronze);
+}
+
+.itemContent {
+  padding: 1.5rem;
+  border: 1px solid rgba(138, 99, 56, 0.16);
+  background: var(--color-surface);
+}
+
+.period {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--color-bronze);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+}
+
+.itemContent h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+}
+
+.institution {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--color-red-bright);
+  font-family: var(--font-mono);
+  font-size: 0.90rem;
+  letter-spacing: 0.1em;
+}
+
+.itemContent p {
+  margin: 1.2rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.knowledge {
+  padding: 1.5rem;
+  border: 1px solid rgba(138, 99, 56, 0.2);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(138, 99, 56, 0.06),
+      transparent 50%
+    ),
+    var(--color-surface);
+}
+
+.knowledgeHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--color-bronze);
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+}
+
+.knowledge > p {
+  margin: 1.2rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.certifications span {
+  padding: 0.4rem 0.55rem;
+  border: 1px solid rgba(138, 99, 56, 0.18);
+  color: var(--color-bronze);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.07em;
+}
+
+@media (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .knowledge {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .education {
+    padding: 5rem 1.25rem;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    left: 0.45rem;
+  }
+
+  .marker {
+    left: -2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .marker svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .itemContent {
+    padding: 1.25rem;
+  }
+}

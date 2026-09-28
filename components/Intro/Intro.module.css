@@ -1,0 +1,287 @@
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: clamp(1.5rem, 4vw, 4rem);
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at center, rgba(142, 31, 31, 0.12), transparent 35%),
+    radial-gradient(
+      circle at center,
+      var(--color-surface-light) 0%,
+      var(--color-background) 65%
+    );
+
+  color: var(--color-text);
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/*
+ * Grade técnica sutil utilizada como textura de fundo.
+ */
+.intro::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(138, 99, 56, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(138, 99, 56, 0.05) 1px, transparent 1px);
+
+  background-size: 50px 50px;
+
+  pointer-events: none;
+}
+
+/*
+ * Brilho central que cria a sensação de energia
+ * vindo do núcleo da máquina.
+ */
+.intro::after {
+  content: "";
+
+  position: absolute;
+  width: min(70vw, 700px);
+  height: min(70vw, 700px);
+
+  border: 1px solid rgba(142, 31, 31, 0.25);
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 80px rgba(142, 31, 31, 0.08),
+    inset 0 0 80px rgba(142, 31, 31, 0.05);
+
+  pointer-events: none;
+}
+
+/*
+ * Anel técnico ao redor do núcleo.
+ *
+ * O desenho é propositalmente discreto para manter
+ * a aparência de interface industrial.
+ */
+.coreRing {
+  position: absolute;
+
+  width: min(28vw, 280px);
+  aspect-ratio: 1;
+
+  border: 1px solid rgba(138, 99, 56, 0.28);
+  border-radius: 50%;
+
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(138, 99, 56, 0.35) 25deg,
+    transparent 26deg,
+    transparent 90deg,
+    rgba(255, 42, 35, 0.3) 91deg,
+    transparent 92deg,
+    transparent 180deg,
+    rgba(138, 99, 56, 0.25) 181deg,
+    transparent 182deg,
+    transparent 270deg,
+    rgba(255, 42, 35, 0.25) 271deg,
+    transparent 272deg
+  );
+
+  mask-image: radial-gradient(
+    circle,
+    transparent 62%,
+    black 63%,
+    black 64%,
+    transparent 65%
+  );
+
+  pointer-events: none;
+}
+
+/*
+ * Núcleo energético da máquina.
+ *
+ * Permanece quase imperceptível enquanto a capa está parada
+ * e ganha intensidade durante o despertar.
+ */
+.core {
+  position: absolute;
+
+  width: min(18vw, 180px);
+  aspect-ratio: 1;
+
+  border: 1px solid rgba(181, 42, 37, 0.35);
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(181, 42, 37, 0.22),
+    rgba(181, 42, 37, 0.04) 45%,
+    transparent 70%
+  );
+
+  box-shadow:
+    0 0 35px rgba(181, 42, 37, 0.12),
+    0 0 90px rgba(181, 42, 37, 0.08);
+
+  pointer-events: none;
+}
+
+/*
+ * Indicador de sistema localizado no canto superior.
+ */
+.system {
+  position: absolute;
+  top: clamp(1.5rem, 4vw, 3rem);
+  right: clamp(1.5rem, 4vw, 3rem);
+
+  z-index: 2;
+
+  color: #ff2a23;
+
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 1vw, 0.8rem);
+  letter-spacing: 0.15em;
+  filter: drop-shadow(0 0 4px rgba(255, 42, 35, 0.9));
+}
+
+.systemIndicator {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 0.45rem;
+  border-radius: 50%;
+  background: #ff2a23;
+  box-shadow:
+    0 0 8px rgba(255, 42, 35, 0.95),
+    0 0 18px rgba(255, 42, 35, 0.65);
+}
+
+/*
+ * Conteúdo principal da capa.
+ */
+.content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+
+  width: min(90vw, 900px);
+
+  text-align: center;
+}
+
+/*
+ * Linhas decorativas acima e abaixo do título.
+ */
+.separator {
+  width: clamp(8rem, 20vw, 14rem);
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-bronze),
+    transparent
+  );
+}
+
+.content h1 {
+  margin: 0;
+
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: clamp(0.08em, 0.2vw, 0.14em);
+
+  text-shadow: 0 0 20px rgba(181, 42, 37, 0.12);
+}
+
+.content h1 span {
+  display: block;
+
+  margin-top: 0.15em;
+
+  color: #ff2a23;
+
+  filter: drop-shadow(0 0 4px rgba(255, 42, 35, 0.45));
+}
+
+.content h2 {
+  margin: 0;
+  color: var(--color-gold);
+
+  font-family: var(--font-mono);
+  font-size: clamp(1.3rem, 1.2vw, 0.85rem);
+  letter-spacing: clamp(0.2em, 0.5vw, 0.3em);
+}
+
+/*
+ * Texto que indica ao visitante que a máquina
+ * está aguardando uma ação.
+ */
+.initialize {
+  margin: 0;
+
+  color: var(--color-gold);
+
+  font-family: var(--font-mono);
+  font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+  letter-spacing: clamp(0.2em, 0.5vw, 0.3em);
+}
+
+/*
+ * Informações técnicas na parte inferior da tela.
+ */
+.footer {
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 3rem);
+  bottom: clamp(1.5rem, 4vw, 3rem);
+  left: clamp(1.5rem, 4vw, 3rem);
+
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 1vw, 0.7rem);
+  letter-spacing: 0.15em;
+}
+
+/*
+ * Ajustes para telas menores.
+ */
+@media (max-width: 600px) {
+  .intro::before {
+    background-size: 35px 35px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+}

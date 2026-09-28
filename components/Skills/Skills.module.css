@@ -1,0 +1,224 @@
+.skills {
+  position: relative;
+  padding: clamp(6rem, 10vw, 10rem) clamp(1.5rem, 6vw, 7rem);
+  border-top: 1px solid rgba(138, 99, 56, 0.12);
+  background: var(--color-background);
+  overflow: hidden;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  right: -15%;
+  bottom: -25%;
+  width: 55%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(181, 42, 37, 0.05),
+    transparent 65%
+  );
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  margin-bottom: clamp(3rem, 6vw, 4rem);
+}
+
+.sectionNumber {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--color-bronze);
+  font-family: var(--font-mono);
+  font-size: 0.90rem;
+  letter-spacing: 0.18em;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+}
+
+.sectionHeader h2 span {
+  display: block;
+  margin-top: 0.15em;
+  color: var(--color-red-bright);
+  font-size: 0.45em;
+  letter-spacing: 0.15em;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 700px;
+  margin-bottom: 3rem;
+  padding: 1rem 1.25rem;
+  border-left: 2px solid var(--color-red);
+  background: rgba(21, 19, 16, 0.5);
+}
+
+.introductionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(138, 99, 56, 0.3);
+  color: var(--color-bronze);
+}
+
+.introductionLabel {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--color-bronze);
+  font-family: var(--font-mono);
+  font-size: 0.90rem;
+  letter-spacing: 0.14em;
+}
+
+.introduction p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.skillCard {
+  position: relative;
+  min-height: 270px;
+  padding: 1.5rem;
+  border: 1px solid rgba(138, 99, 56, 0.16);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(138, 99, 56, 0.06),
+      transparent 45%
+    ),
+    var(--color-surface);
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.skillCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background: var(--color-red);
+}
+
+.skillCard:hover {
+  border-color: rgba(181, 42, 37, 0.35);
+  transform: translateY(-3px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(138, 99, 56, 0.25);
+  color: var(--color-bronze);
+}
+
+.cardNumber {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.skillCard h3 {
+  margin: 1.5rem 0 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.skillCard > p {
+  margin: 0.45rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.skillList span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid rgba(138, 99, 56, 0.18);
+  color: var(--color-bronze);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+}
+
+.skillList svg {
+  opacity: 0.7;
+}
+
+@media (max-width: 950px) {
+  .skillGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .skills {
+    padding: 5rem 1.25rem;
+  }
+
+  .introduction {
+    align-items: flex-start;
+  }
+
+  .skillGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .skillCard {
+    min-height: auto;
+  }
+}
