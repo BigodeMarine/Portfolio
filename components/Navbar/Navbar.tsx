@@ -7,9 +7,9 @@ import styles from "./Navbar.module.css";
 
 const navigationItems = [
   { label: "ABOUT", href: "#about" },
-  { label: "EXPERIENCE", href: "#experience" },
-  { label: "SKILLS", href: "#skills" },
   { label: "PROJECTS", href: "#projects" },
+  { label: "SKILLS", href: "#skills" },
+  { label: "EXPERIENCE", href: "#experience" },
   { label: "EDUCATION", href: "#education" },
   { label: "CONTACT", href: "#contact" },
 ];
@@ -41,11 +41,7 @@ export default function Navbar() {
         aria-label="Navegação principal"
       >
         {navigationItems.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            onClick={handleNavigation}
-          >
+          <a key={item.href} href={item.href} onClick={handleNavigation}>
             {item.label}
           </a>
         ))}
