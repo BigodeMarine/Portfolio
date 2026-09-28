@@ -21,16 +21,22 @@ bash
 ```
 git clone https://github.com/BigodeMarine/Portfolio.git  
 ```
+```
 cd portfolio-mechanicus  
+```
 
 # 2. Instale as dependências  
+```
 npm install  
+```
 
 # 3. Inicie o servidor de desenvolvimento  
 npm run dev  
+
 ```
 Abra http://localhost:3000 no navegador.  
 ```
+
 📜 Scripts disponíveis  
 Comando	Descrição  
 npm run dev	Inicia o servidor de desenvolvimento 
@@ -54,12 +60,12 @@ npm run lint	Executa o ESLint
 🔄 CI/CD  
 A cada push ou pull request na main, o GitHub Actions executa:  
 
-Instalação das dependências (npm ci)  
-Lint (npm run lint)  
-Geração de tipos (next typegen) e checagem (tsc --noEmit)  
-Build de produção (npm run build)  
-O deploy é feito automaticamente pela Vercel a cada push na main.  
+1. Instalação das dependências (npm ci)  
+2. Lint (npm run lint)  
+3. Geração de tipos (next typegen) e checagem (tsc --noEmit)  
+4. Build de produção (npm run build)  
+5. O deploy é feito automaticamente pela Vercel a cada push na main.  
 
 
-<p align="center">Feito com ☕, Python e um pouco de engrenagem.</p>  
+<p align="center">Feito com ☕, Typescript e um pouco de engrenagem.</p>  
 
