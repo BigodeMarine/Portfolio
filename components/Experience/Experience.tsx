@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, Circle } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
 import { motion } from "framer-motion";
 import styles from "./Experience.module.css";
 

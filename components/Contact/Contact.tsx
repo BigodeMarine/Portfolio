@@ -1,5 +1,4 @@
 import {
-  ArrowUpRight,
   Mail,
   MapPin,
   MessageSquare,
