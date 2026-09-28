@@ -73,8 +73,8 @@ export default function Experience() {
                 formulações e procedimentos estabelecidos.
                 <br />● Identificação de anormalidades no processo e comunicação
                 à liderança ou equipe responsável, contribuindo para a correção
-                de desvios e manutenção da qualidade do produto. ● Monitoramento
-                das etapas de processamento, realizando ajustes conforme as
+                de desvios e manutenção da qualidade do produto. 
+                <br />● Monitoramento das etapas de processamento, realizando ajustes conforme as
                 características da pele e os padrões de produção.
                 <br />● Registro e acompanhamento das informações do processo,
                 garantindo a rastreabilidade das operações realizadas.
