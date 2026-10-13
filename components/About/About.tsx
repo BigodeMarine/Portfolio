@@ -66,7 +66,7 @@ export default function About() {
             </h3>
 
             <p>
-              Sou Desenvolvedor Full Stack Python, atualmente em transição de carreira. Gosto de transformar problemas em soluções de software bem estruturadas, buscando escrever código organizado, modular e de fácil manutenção.
+              Sou Desenvolvedor Full Stack Python, gosto de transformar problemas em soluções de software bem estruturadas, buscando escrever código organizado, modular e de fácil manutenção.
             </p>
 
             <p>
