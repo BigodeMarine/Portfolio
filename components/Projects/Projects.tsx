@@ -11,7 +11,7 @@ const projects = [
       "Plataforma para gerenciamento de Campanhas, acontecimentos e membros, desenvolvida com uma arquitetura full stack.",
     technologies: ["PYTHON", "FASTAPI", "NEXT.JS", "POSTGRESQL", "DOCKER"],
     github: "https://github.com/BigodeMarine/Cronicas.git",
-    demo: "#",
+    demo: "https://cronicas-beta.vercel.app",
   },
   {
     featured: false,
