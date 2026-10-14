@@ -9,7 +9,7 @@ const projects = [
     title: "Crônicas",
     description:
       "Plataforma para gerenciamento de Campanhas, acontecimentos e membros, desenvolvida com uma arquitetura full stack.",
-    technologies: ["PYTHON", "FASTAPI", "NEXT.JS", "POSTGRESQL", "DOCKER"],
+    technologies: ["PYTHON", "FASTAPI", "NEXT.JS", "POSTGRESQL", "JWT", "Pytest", "ESLint"],
     github: "https://github.com/BigodeMarine/Cronicas.git",
     demo: "https://cronicas-beta.vercel.app",
   },
