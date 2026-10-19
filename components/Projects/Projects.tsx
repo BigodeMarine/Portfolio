@@ -31,7 +31,7 @@ const projects = [
       "API REST desenvolvida para gerenciamento de dados, utilizando persistência relacional, cache e infraestrutura containerizada. A aplicação permite criar,consultar e gerenciar Pokémon através de uma API REST.",
     technologies: ["PYTHON", "FASTAPI", "POSTGRESQL", "REDIS", "DOCKER"],
     github: "https://github.com/BigodeMarine/Pokemon-API",
-    demo: "https://pokemon-1ce5u1km6-bigodemarines-projects.vercel.app/docs",
+    demo: "https://pokemon-api-iota-beige.vercel.app/pokedex",
   },
 ];
 
