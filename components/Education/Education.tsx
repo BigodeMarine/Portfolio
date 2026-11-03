@@ -5,7 +5,7 @@ import styles from "./Education.module.css";
 const educationItems = [
   
   {
-    icon: GradduationCap,
+    icon: GraduationCap,
     period: "Em andamento",
     title: "Graduação em Inteligência Artificial e Automação Digital",
     institution: "UniFECAF em parceria com Rocketseat",
