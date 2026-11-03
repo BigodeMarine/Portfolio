@@ -3,21 +3,23 @@ import { motion } from "framer-motion";
 import styles from "./Education.module.css";
 
 const educationItems = [
+  
   {
-    icon: GraduationCap,
+    icon: GradduationCap,
+    period: "Em andamento",
+    title: "Graduação em Inteligência Artificial e Automação Digital",
+    institution: "UniFECAF em parceria com Rocketseat",
+    description:
+      "Formação tecnológica voltada ao desenvolvimento de soluções digitais com Inteligência Artificial, automação de processos e integração de sistemas. Estudos em lógica de programação, IA generativa, desenvolvimento No-Code e Low-Code, APIs, gestão de projetos e metodologias ágeis, com foco na criação de aplicações inteligentes e na otimização de processos.",
+  },
+
+  {
+    icon: BookOpen,
     period: "2024 — 2026",
     title: "Curso Livre Profissional, Desenvolvimento Full Stack Python",
     institution: "EBAC - Escola Britânica de Artes Criativas e Tecnologia",
     description:
       "Formação voltada ao desenvolvimento de software, fundamentos de programação, engenharia de software e banco de dados. Capacitado para atuar em todo o ciclo de criação de aplicações web, do design da interface à lógica de back-end em Python.",
-  },
-  {
-    icon: BookOpen,
-    period: "2013 - 2017",
-    title: "Ensino Médio completo",
-    institution: "Colégio Estadual Unidade Polo - SJP",
-    description:
-      "Ensino Médio voltado à formação geral de excelência, com foco no desenvolvimento de raciocínio lógico, resolução de problemas e competências analíticas. Base sólida que serve de suporte para o aprendizado acelerado em engenharia de software e tecnologia.",
   },
 ];
 
