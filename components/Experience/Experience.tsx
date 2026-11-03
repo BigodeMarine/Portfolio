@@ -42,7 +42,80 @@ export default function Experience() {
               delay: 0.15,
               ease: "easeOut",
             }}
-          >
+          >            
+            <div className={styles.timelineMarker}>
+              <BriefcaseBusiness size={16} />
+            </div>
+            
+            <div className={styles.experienceContent}>
+              <div className={styles.experienceHeader}>
+                <div>
+                  <span className={styles.period}>Out. 2026 — Atual</span>
+            
+                  <h3>Desenvolvedor Front-end Voluntário</h3>
+            
+                  <span className={styles.company}>Lacrei Saúde</span>
+                </div>
+            
+                {/* <span className={styles.status}>
+                  <Circle size={7} fill="currentColor" />
+                  ACTIVE
+                </span> */}
+              </div>
+            
+              <p>
+                ● Manutenção e evolução de interfaces com React, Next.js e
+                TypeScript, com foco em acessibilidade, responsividade e
+                experiência do usuário.
+                <br />
+                ● Correção de barreiras de acessibilidade por meio de HTML
+                semântico, hierarquia de títulos, textos alternativos e
+                navegação por teclado, seguindo diretrizes WCAG.
+                <br />
+                ● Ajustes de layouts com CSS Grid e Flexbox, corrigindo
+                sobreposições, alinhamentos e adaptação a dispositivos móveis,
+                tablets e desktops.
+                <br />
+                ● Padronização visual de componentes com tokens do Marsha
+                Design System e melhoria do comportamento de links de contato.
+                <br />
+                ● Criação e execução de testes automatizados com Jest,
+                verificação de tipos e build, além de validações com WAVE
+                e leitor de tela.
+                <br />
+                ● Atuação em equipe multidisciplinar, colaborando com
+                profissionais de Front-end, Back-end, QA e liderança técnica
+                (Leads) no desenvolvimento, validação e evolução contínua
+                da plataforma.
+                <br />
+                ● Documentação de alterações e evidências de testes,
+                com versionamento de código utilizando Git e GitHub.
+              </p>
+            
+              <div className={styles.technologies}>
+                <span>React</span>
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Jest</span>
+                <span>WCAG</span>
+                <span>Git</span>
+                <span>GitHub</span>
+              </div>
+            </div>
+            </motion.article>
+            
+            <motion.article
+              className={styles.experienceItem}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.3,
+                ease: "easeOut",
+              }}
+            >
+
             <div className={styles.timelineMarker}>
               <BriefcaseBusiness size={16} />
             </div>
